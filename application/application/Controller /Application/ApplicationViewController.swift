@@ -9,12 +9,24 @@ import UIKit
 
 class ApplicationViewController: UIViewController {
     
+    private let idScheduleCell = "idScheduleCell"
+    
     private let tableView: UITableView = {
        let tableView = UITableView()
-        tableView.bounces = false
+//        tableView.bounces = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
+    
+    private let sendApplicationButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Отправить заявку", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .darkGray
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
 
 
     override func viewDidLoad() {
@@ -25,8 +37,25 @@ class ApplicationViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: idScheduleCell)
         
         setConstraints()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(addButtonTapped))
+    }
+    
+    @objc private func addButtonTapped() {
+
+        let scheduleOption = ApplicationOptionsTableViewController()
+        navigationController?.pushViewController(scheduleOption, animated: true)
+    }
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
 }
@@ -35,11 +64,11 @@ class ApplicationViewController: UIViewController {
 
 extension ApplicationViewController: UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
+            return 3
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)// as! ScheduleTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: idScheduleCell, for: indexPath) as! ScheduleTableViewCell
 //            let model = scheduleArray[indexPath.row]
 //            cell.configure(model: model)
             return cell
@@ -68,12 +97,22 @@ extension ApplicationViewController {
     
     func setConstraints() {
         
+        view.addSubview(sendApplicationButton)
+        NSLayoutConstraint.activate([
+            sendApplicationButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
+            sendApplicationButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            sendApplicationButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            sendApplicationButton.widthAnchor.constraint(equalToConstant: 100),
+            sendApplicationButton.heightAnchor.constraint(equalToConstant: 45)
+        ])
+
+        
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            tableView.bottomAnchor.constraint(equalTo: sendApplicationButton.topAnchor, constant: -100)
         ])
     }
 }

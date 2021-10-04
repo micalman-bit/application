@@ -11,6 +11,26 @@
 		C42194FA27089DCD008044A4 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194F927089DCD008044A4 /* ApplicationViewController.swift */; };
 		C42194FC27089ED3008044A4 /* ReceptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194FB27089ED3008044A4 /* ReceptionViewController.swift */; };
 		C42194FE27089F17008044A4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194FD27089F17008044A4 /* HistoryViewController.swift */; };
+		C4784C812709C307002F521F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C802709C307002F521F /* ScheduleTableViewCell.swift */; };
+		C4784C892709C32E002F521F /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C842709C32E002F521F /* UIStackView.swift */; };
+		C4784C8A2709C32E002F521F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C852709C32E002F521F /* UIColor.swift */; };
+		C4784C8B2709C32E002F521F /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C862709C32E002F521F /* UIFont.swift */; };
+		C4784C8C2709C32E002F521F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C872709C32E002F521F /* UILabel.swift */; };
+		C4784C8D2709C32E002F521F /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C882709C32E002F521F /* UIAlertController.swift */; };
+		C4784C8F2709C3ED002F521F /* ApplicationOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C8E2709C3ED002F521F /* ApplicationOptionsTableViewController.swift */; };
+		C4784C9B2709CD12002F521F /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C942709CD12002F521F /* TasksTableViewCell.swift */; };
+		C4784C9C2709CD12002F521F /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C952709CD12002F521F /* OptionsTableViewCell.swift */; };
+		C4784C9D2709CD12002F521F /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C972709CD12002F521F /* ContactsTableViewCell.swift */; };
+		C4784C9E2709CD12002F521F /* ColorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C982709CD12002F521F /* ColorsTableViewCell.swift */; };
+		C4784C9F2709CD12002F521F /* HeaderOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C992709CD12002F521F /* HeaderOptionsTableViewCell.swift */; };
+		C4784CA7270A1566002F521F /* AlertFriendOrTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA1270A1566002F521F /* AlertFriendOrTeacher.swift */; };
+		C4784CA8270A1566002F521F /* AlertPhotoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA2270A1566002F521F /* AlertPhotoCamera.swift */; };
+		C4784CA9270A1566002F521F /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA3270A1566002F521F /* AlertForCellName.swift */; };
+		C4784CAA270A1566002F521F /* AlertDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA4270A1566002F521F /* AlertDate.swift */; };
+		C4784CAB270A1566002F521F /* AlertOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA5270A1566002F521F /* AlertOk.swift */; };
+		C4784CAC270A1566002F521F /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CA6270A1566002F521F /* AlertTime.swift */; };
+		C4784CAE270A184F002F521F /* ReceptionTableViewControllerXZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CAD270A184F002F521F /* ReceptionTableViewControllerXZ.swift */; };
+		C4784CB0270A1A27002F521F /* ReceptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784CAF270A1A27002F521F /* ReceptionTableViewController.swift */; };
 		C483389A2707193B00E32DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48338992707193B00E32DDA /* AppDelegate.swift */; };
 		C483389C2707193B00E32DDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483389B2707193B00E32DDA /* SceneDelegate.swift */; };
 		C48338A32707193D00E32DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48338A22707193D00E32DDA /* Assets.xcassets */; };
@@ -24,6 +44,26 @@
 		C42194F927089DCD008044A4 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		C42194FB27089ED3008044A4 /* ReceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionViewController.swift; sourceTree = "<group>"; };
 		C42194FD27089F17008044A4 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C4784C802709C307002F521F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		C4784C842709C32E002F521F /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		C4784C852709C32E002F521F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C4784C862709C32E002F521F /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		C4784C872709C32E002F521F /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		C4784C882709C32E002F521F /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		C4784C8E2709C3ED002F521F /* ApplicationOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationOptionsTableViewController.swift; sourceTree = "<group>"; };
+		C4784C942709CD12002F521F /* TasksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
+		C4784C952709CD12002F521F /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		C4784C972709CD12002F521F /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		C4784C982709CD12002F521F /* ColorsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsTableViewCell.swift; sourceTree = "<group>"; };
+		C4784C992709CD12002F521F /* HeaderOptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		C4784CA1270A1566002F521F /* AlertFriendOrTeacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFriendOrTeacher.swift; sourceTree = "<group>"; };
+		C4784CA2270A1566002F521F /* AlertPhotoCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPhotoCamera.swift; sourceTree = "<group>"; };
+		C4784CA3270A1566002F521F /* AlertForCellName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
+		C4784CA4270A1566002F521F /* AlertDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDate.swift; sourceTree = "<group>"; };
+		C4784CA5270A1566002F521F /* AlertOk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOk.swift; sourceTree = "<group>"; };
+		C4784CA6270A1566002F521F /* AlertTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
+		C4784CAD270A184F002F521F /* ReceptionTableViewControllerXZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewControllerXZ.swift; sourceTree = "<group>"; };
+		C4784CAF270A1A27002F521F /* ReceptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewController.swift; sourceTree = "<group>"; };
 		C48338962707193B00E32DDA /* application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48338992707193B00E32DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C483389B2707193B00E32DDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C42194F927089DCD008044A4 /* ApplicationViewController.swift */,
+				C4784C8E2709C3ED002F521F /* ApplicationOptionsTableViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -79,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				C42194FB27089ED3008044A4 /* ReceptionViewController.swift */,
+				C4784CAD270A184F002F521F /* ReceptionTableViewControllerXZ.swift */,
+				C4784CAF270A1A27002F521F /* ReceptionTableViewController.swift */,
 			);
 			path = Reception;
 			sourceTree = "<group>";
@@ -89,6 +132,76 @@
 				C42194FD27089F17008044A4 /* HistoryViewController.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		C4784C822709C32E002F521F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C832709C32E002F521F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4784C832709C32E002F521F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C842709C32E002F521F /* UIStackView.swift */,
+				C4784C852709C32E002F521F /* UIColor.swift */,
+				C4784C862709C32E002F521F /* UIFont.swift */,
+				C4784C872709C32E002F521F /* UILabel.swift */,
+				C4784C882709C32E002F521F /* UIAlertController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C4784C902709CD12002F521F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C912709CD12002F521F /* Schedule */,
+				C4784C932709CD12002F521F /* Tasks */,
+				C4784C952709CD12002F521F /* OptionsTableViewCell.swift */,
+				C4784C962709CD12002F521F /* Contacts */,
+				C4784C982709CD12002F521F /* ColorsTableViewCell.swift */,
+				C4784C992709CD12002F521F /* HeaderOptionsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C4784C912709CD12002F521F /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C802709C307002F521F /* ScheduleTableViewCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		C4784C932709CD12002F521F /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C942709CD12002F521F /* TasksTableViewCell.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C4784C962709CD12002F521F /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C4784C972709CD12002F521F /* ContactsTableViewCell.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C4784CA0270A1566002F521F /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C4784CA1270A1566002F521F /* AlertFriendOrTeacher.swift */,
+				C4784CA2270A1566002F521F /* AlertPhotoCamera.swift */,
+				C4784CA3270A1566002F521F /* AlertForCellName.swift */,
+				C4784CA4270A1566002F521F /* AlertDate.swift */,
+				C4784CA5270A1566002F521F /* AlertOk.swift */,
+				C4784CA6270A1566002F521F /* AlertTime.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		C483388D2707193B00E32DDA = {
@@ -110,8 +223,11 @@
 		C48338982707193B00E32DDA /* application */ = {
 			isa = PBXGroup;
 			children = (
+				C4784CA0270A1566002F521F /* Alert */,
 				C421950027089F47008044A4 /* Application */,
 				C42194FF27089F1F008044A4 /* Controller  */,
+				C4784C822709C32E002F521F /* Extensions */,
+				C4784C902709CD12002F521F /* Cell */,
 				C48338A22707193D00E32DDA /* Assets.xcassets */,
 				C48338A42707193D00E32DDA /* LaunchScreen.storyboard */,
 				C48338A72707193D00E32DDA /* Info.plist */,
@@ -190,13 +306,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48338AE27071A6900E32DDA /* LoginViewController.swift in Sources */,
+				C4784C8C2709C32E002F521F /* UILabel.swift in Sources */,
+				C4784CAB270A1566002F521F /* AlertOk.swift in Sources */,
+				C4784CA8270A1566002F521F /* AlertPhotoCamera.swift in Sources */,
 				C42194FC27089ED3008044A4 /* ReceptionViewController.swift in Sources */,
 				C483389A2707193B00E32DDA /* AppDelegate.swift in Sources */,
+				C4784CAE270A184F002F521F /* ReceptionTableViewControllerXZ.swift in Sources */,
 				C42194F8270895E1008044A4 /* MainTabBarController.swift in Sources */,
+				C4784C9B2709CD12002F521F /* TasksTableViewCell.swift in Sources */,
 				C48338B02707816C00E32DDA /* RegistrationViewController.swift in Sources */,
+				C4784CAC270A1566002F521F /* AlertTime.swift in Sources */,
+				C4784CB0270A1A27002F521F /* ReceptionTableViewController.swift in Sources */,
 				C483389C2707193B00E32DDA /* SceneDelegate.swift in Sources */,
+				C4784C9E2709CD12002F521F /* ColorsTableViewCell.swift in Sources */,
+				C4784C9F2709CD12002F521F /* HeaderOptionsTableViewCell.swift in Sources */,
 				C42194FA27089DCD008044A4 /* ApplicationViewController.swift in Sources */,
+				C4784C9D2709CD12002F521F /* ContactsTableViewCell.swift in Sources */,
+				C4784C8A2709C32E002F521F /* UIColor.swift in Sources */,
+				C4784CA9270A1566002F521F /* AlertForCellName.swift in Sources */,
+				C4784C8F2709C3ED002F521F /* ApplicationOptionsTableViewController.swift in Sources */,
+				C4784CAA270A1566002F521F /* AlertDate.swift in Sources */,
+				C4784C8B2709C32E002F521F /* UIFont.swift in Sources */,
+				C4784C8D2709C32E002F521F /* UIAlertController.swift in Sources */,
+				C4784C9C2709CD12002F521F /* OptionsTableViewCell.swift in Sources */,
+				C4784CA7270A1566002F521F /* AlertFriendOrTeacher.swift in Sources */,
+				C4784C892709C32E002F521F /* UIStackView.swift in Sources */,
 				C42194FE27089F17008044A4 /* HistoryViewController.swift in Sources */,
+				C4784C812709C307002F521F /* ScheduleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +479,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +506,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
