@@ -9,7 +9,7 @@ import UIKit
 
 class ApplicationViewController: UIViewController {
     
-    private let idScheduleCell = "idScheduleCell"
+    private let idApplicationCell = "idApplicationCell"
     
     private let tableView: UITableView = {
        let tableView = UITableView()
@@ -37,7 +37,7 @@ class ApplicationViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: idScheduleCell)
+        tableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: idApplicationCell)
         
         setConstraints()
 
@@ -68,7 +68,7 @@ extension ApplicationViewController: UITableViewDelegate, UITableViewDataSource 
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: idScheduleCell, for: indexPath) as! ScheduleTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: idApplicationCell, for: indexPath) as! ScheduleTableViewCell
 //            let model = scheduleArray[indexPath.row]
 //            cell.configure(model: model)
             return cell

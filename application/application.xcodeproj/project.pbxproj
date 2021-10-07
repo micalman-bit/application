@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C402A85B270C4FFC006E4309 /* ReceptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C402A85A270C4FFC006E4309 /* ReceptionTableViewCell.swift */; };
 		C42194F8270895E1008044A4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194F7270895E1008044A4 /* MainTabBarController.swift */; };
 		C42194FA27089DCD008044A4 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194F927089DCD008044A4 /* ApplicationViewController.swift */; };
-		C42194FC27089ED3008044A4 /* ReceptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194FB27089ED3008044A4 /* ReceptionViewController.swift */; };
 		C42194FE27089F17008044A4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42194FD27089F17008044A4 /* HistoryViewController.swift */; };
 		C4784C812709C307002F521F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C802709C307002F521F /* ScheduleTableViewCell.swift */; };
 		C4784C892709C32E002F521F /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4784C842709C32E002F521F /* UIStackView.swift */; };
@@ -40,9 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C402A85A270C4FFC006E4309 /* ReceptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewCell.swift; sourceTree = "<group>"; };
 		C42194F7270895E1008044A4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C42194F927089DCD008044A4 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
-		C42194FB27089ED3008044A4 /* ReceptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionViewController.swift; sourceTree = "<group>"; };
 		C42194FD27089F17008044A4 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		C4784C802709C307002F521F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		C4784C842709C32E002F521F /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 		C421950227089F77008044A4 /* Reception */ = {
 			isa = PBXGroup;
 			children = (
-				C42194FB27089ED3008044A4 /* ReceptionViewController.swift */,
 				C4784CAD270A184F002F521F /* ReceptionTableViewControllerXZ.swift */,
 				C4784CAF270A1A27002F521F /* ReceptionTableViewController.swift */,
 			);
@@ -157,9 +156,9 @@
 		C4784C902709CD12002F521F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C4784C912709CD12002F521F /* Schedule */,
-				C4784C932709CD12002F521F /* Tasks */,
 				C4784C952709CD12002F521F /* OptionsTableViewCell.swift */,
+				C4784C912709CD12002F521F /* Application */,
+				C4784C932709CD12002F521F /* Reception */,
 				C4784C962709CD12002F521F /* Contacts */,
 				C4784C982709CD12002F521F /* ColorsTableViewCell.swift */,
 				C4784C992709CD12002F521F /* HeaderOptionsTableViewCell.swift */,
@@ -167,20 +166,21 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		C4784C912709CD12002F521F /* Schedule */ = {
+		C4784C912709CD12002F521F /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				C4784C802709C307002F521F /* ScheduleTableViewCell.swift */,
 			);
-			path = Schedule;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		C4784C932709CD12002F521F /* Tasks */ = {
+		C4784C932709CD12002F521F /* Reception */ = {
 			isa = PBXGroup;
 			children = (
 				C4784C942709CD12002F521F /* TasksTableViewCell.swift */,
+				C402A85A270C4FFC006E4309 /* ReceptionTableViewCell.swift */,
 			);
-			path = Tasks;
+			path = Reception;
 			sourceTree = "<group>";
 		};
 		C4784C962709CD12002F521F /* Contacts */ = {
@@ -308,8 +308,8 @@
 				C48338AE27071A6900E32DDA /* LoginViewController.swift in Sources */,
 				C4784C8C2709C32E002F521F /* UILabel.swift in Sources */,
 				C4784CAB270A1566002F521F /* AlertOk.swift in Sources */,
+				C402A85B270C4FFC006E4309 /* ReceptionTableViewCell.swift in Sources */,
 				C4784CA8270A1566002F521F /* AlertPhotoCamera.swift in Sources */,
-				C42194FC27089ED3008044A4 /* ReceptionViewController.swift in Sources */,
 				C483389A2707193B00E32DDA /* AppDelegate.swift in Sources */,
 				C4784CAE270A184F002F521F /* ReceptionTableViewControllerXZ.swift in Sources */,
 				C42194F8270895E1008044A4 /* MainTabBarController.swift in Sources */,

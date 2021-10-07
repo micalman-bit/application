@@ -5,143 +5,119 @@
 //  Created by Андрей Самченко on 17.07.2021.
 //
 
+//
+//  ApplicationViewController.swift
+//  application
+//
+//  Created by Andrey Samchenko on 02.10.2021.
+//
+
 import UIKit
 
-class ReceptionTableViewController: UITableViewController {
+class ReceptionTableViewController: UIViewController {
     
-    private let idOptionsScheduleCell = "idOptionsSheduleCell"
-    private let idOptionsScheduleHeader = "idOptionsScheduleHeader"
+    private let idReceptionCell = "idReceptionCell"
     
-    private let headerNameArray = ["12.13.2020", "12.13.2020", "12.13.2020", "12.13.2020", "12.13.2020"]
+    private let tableView: UITableView = {
+       let tableView = UITableView()
+//        tableView.bounces = false
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
     
-    private let cellNameArray = [["Date", "Time"],
-                         ["Name", "Type", "Building", "Audience"],
-                         ["Teacher Name"],
-                         [""],
-                         ["Repeat every 7 days"]]
-    
-//    private var scheduleModel = ScheduleModel()
-    
-    var hexColorCell = "1A4766"
-    
+    private let sendApplicationButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Потдвердить сбор", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .darkGray
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "САНЯ ХУЙ СОСИ"
+
+        view.backgroundColor = .white
+        title = "Составление заявки"
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.968627451, alpha: 1)
-        tableView.separatorStyle = .none
-//        tableView.bounces = false
-        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: idOptionsScheduleCell)
-        tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsScheduleHeader)
-
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonTapped))
-    }
-
-//    @objc private func saveButtonTapped() {
-//
-//        if scheduleModel.scheduleDate == nil || scheduleModel.scheduleTime == nil || scheduleModel.scheduleName == "Unknown" {
-//            alertOk(title: "Error", message: "Requered fileds: DATE, TIME, NAME")
-//        } else {
-//            scheduleModel.scheduleColor = hexColorCell
-//            RealmManager.shared.saveScheduleModel(model: scheduleModel)
-//            scheduleModel = ScheduleModel()
-//            alertOk(title: "Success", message: nil)
-//            hexColorCell = "1A4766"
-//            tableView.reloadData()
-//        }
-//    }
-    
-    private func pushControllers(vc: UIViewController) {
-        let viewController = vc
-        navigationController?.navigationBar.topItem?.title = "Options"
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    
-    //MARK: UITableViewDelegate, UITableViewDataSource
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        5
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0: return 2
-        case 1: return 4
-        case 2: return 1
-        case 3: return 1
-        default:
-            return 1
-        }
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsScheduleCell, for: indexPath) as! OptionsTableViewCell
-        cell.cellScheduleConfigure(nameArray: cellNameArray, indexPath: indexPath, hexColor: hexColorCell)
-//        cell.switchRepeatDelegate = self
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        44
-    }
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: idOptionsScheduleHeader) as! HeaderOptionsTableViewCell
-        header.headerConfigure(nameArray: headerNameArray, section: section)
-        return header
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        30
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.register(ScheduleTableViewCell.self, forCellReuseIdentifier: idReceptionCell)
         
-        let cell = tableView.cellForRow(at: indexPath) as! OptionsTableViewCell
-        
-        switch indexPath {
-        case [0,0]:
-            alertDate(label: cell.nameCellLabel) { (numberWeekday, date) in
-                print("qwe")
-            }
-        case [0,1]:
-            alertTime(label: cell.nameCellLabel) { (time) in
-                print("qwe")
-            }
-        case [1,0]:
-            alertForCellName(label: cell.nameCellLabel, name: "Name Lesson", placeholder: "Enter name lesson") { text in
-                print("qwe")
-            }
-        case [1,1]:
-            alertForCellName(label: cell.nameCellLabel, name: "Type lesson", placeholder: "Enter type lesson") { text in
-                print("qwe")
-            }
-        case [1,2]:
-            alertForCellName(label: cell.nameCellLabel, name: "Building number", placeholder: "Enter number of building") { text in
-                print("qwe")
-            }
-        case [1,3]:
-            alertForCellName(label: cell.nameCellLabel, name: "Audience number", placeholder: "Enter number of audience") { text in
-                print("qwe")
-            }
-        case [2,0]:
-            print("qwe")
-        case [3,0]:
-            print("qwe")
-        default:
-            print("Tap OptionsTableView")
-        }
+        setConstraints()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(addButtonTapped))
     }
+    
+    @objc private func addButtonTapped() {
+
+        let scheduleOption = ApplicationOptionsTableViewController()
+        navigationController?.pushViewController(scheduleOption, animated: true)
+    }
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+
 }
 
-//MARK: SwitchRepeatProtocol
+//MARK: UITableViewDelegate, UITableViewDataSource
 
-//extension ScheduleOptionsTableViewController: SwitchRepeatProtocol {
-//    func switchRepeat(value: Bool) {
-//        scheduleModel.scheduleRepeat = value
-//    }
-//}
+extension ReceptionTableViewController: UITableViewDelegate, UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 3
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: idReceptionCell, for: indexPath) as! ReceptionTableViewCell
+//            let model = scheduleArray[indexPath.row]
+//            cell.configure(model: model)
+            return cell
+        }
+        
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 80
+        }
+        
+//        func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//
+//            let editingRow = scheduleArray[indexPath.row]
+//
+//            let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, completionHandler in
+//                RealmManager.shared.deleteScheduleModel(model: editingRow)
+//                tableView.reloadData()
+//            }
+//            return UISwipeActionsConfiguration(actions: [deleteAction])
+//        }
+    }
+
+
+//MARK: Constraints
+
+extension ReceptionTableViewController {
+    
+    func setConstraints() {
+        
+        view.addSubview(sendApplicationButton)
+        NSLayoutConstraint.activate([
+            sendApplicationButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
+            sendApplicationButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            sendApplicationButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            sendApplicationButton.widthAnchor.constraint(equalToConstant: 100),
+            sendApplicationButton.heightAnchor.constraint(equalToConstant: 45)
+        ])
+
+        
+        view.addSubview(tableView)
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: sendApplicationButton.topAnchor, constant: -100)
+        ])
+    }
+}
